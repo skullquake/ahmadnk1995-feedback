@@ -47,11 +47,11 @@ export function TextBox({ style, Editable, myTextValue, onChangeText, requiredMe
             <TextInput
                 value={TextValue}
                 style={styles.input}
-                editable={Editable == "RW" ? true : false}
+                editable={myTextValue.readOnly?false:true}
                 onChangeText={text => handleChange(text)}
             ></TextInput>
 
-            {TextValue === "" ? <Text style={styles.validation}>{requiredMessage}</Text> : null}
+            {myTextValue.validation!=null&&myTextValue.validation!=""? <Text style={styles.validation}>{myTextValue.validation}</Text> : null}
         </View>
     );
 }

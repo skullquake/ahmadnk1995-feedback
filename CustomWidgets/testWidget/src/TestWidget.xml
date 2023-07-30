@@ -25,7 +25,8 @@
                 </attributeTypes>
             </property>
 
-            <!-- ###################################  Task 1 : ReadOnly ################################### -->
+	    <!-- ###################################  Task 1 : ReadOnly ################################### -->
+	    <!-- not required
             <property key="Editable" type="enumeration" defaultValue="RW">
                 <caption>Editability</caption>
                 <description>My enumeration setting</description>
@@ -33,7 +34,8 @@
                     <enumerationValue key="RW">Read/Write</enumerationValue>
                     <enumerationValue key="R">Read only</enumerationValue>
                 </enumerationValues>
-            </property>
+		    </property>
+	    -->
 
             <!-- ################################### Task 2 : OnChange ################################### -->
 
@@ -43,10 +45,12 @@
             </property>
             <!-- ################################### Task 3 : Validation Message ################################### -->
 
+	    <!-- not required
             <property key="requiredMessage" type="string">
                 <caption>Required message</caption>
                 <description>Enter Text</description>
             </property>
+	    -->
 
             <!-- ################################################################################################### -->
         </propertyGroup>
