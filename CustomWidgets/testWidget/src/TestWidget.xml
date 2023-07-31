@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="entidad.testwidget.TestWidget"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>Test Widget</name>
+    <description>My widget description</description>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <systemProperty key="Label" />
+            <!-- ###################################  Text Input ################################### -->
+
+            <property key="myTextValue" type="attribute">
+                <caption>Text Value</caption>
+                <description>Text Value</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+
+            <!-- ###################################  Task 1 : ReadOnly ################################### -->
+            <property key="Editable" type="enumeration" defaultValue="RW">
+                <caption>Editability</caption>
+                <description>My enumeration setting</description>
+                <enumerationValues>
+                    <enumerationValue key="RW">Read/Write</enumerationValue>
+                    <enumerationValue key="R">Read only</enumerationValue>
+                </enumerationValues>
+            </property>
+
+            <!-- ################################### Task 2 : OnChange ################################### -->
+
+            <property key="onChangeText" type="action">
+                <caption>On Change</caption>
+                <description />
+            </property>
+            <!-- ################################### Task 3 : Validation Message ################################### -->
+
+            <property key="requiredMessage" type="string">
+                <caption>Required message</caption>
+                <description>Enter Text</description>
+            </property>
+
+            <!-- ################################################################################################### -->
+        </propertyGroup>
+    </properties>
+</widget>
